@@ -7,7 +7,7 @@ public:
         Spade
     };
 
-    enum class FaceValue {
+    enum class Rank {
         Two=2,
         Three=3,
         Four=4,
@@ -23,13 +23,13 @@ public:
         Ace=14
     };
 
-    Card(Suit suit, FaceValue value);
+    Card(Suit suit, Rank rank);
 
-    Suit getSuit();
+    Suit getSuit() const;
 
-    FaceValue getFaceValue();
+    Rank getRank() const;
 
 private:
     Suit m_suit;
-    FaceValue m_facevalue;    
+    Rank m_rank;    
 };
