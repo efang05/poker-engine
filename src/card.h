@@ -1,10 +1,10 @@
 class Card {
 public:
     enum class Suit {
-        Heart,
-        Diamond,
-        Club,
-        Spade
+        Heart=1,
+        Diamond=2,
+        Club=3,
+        Spade=4
     };
 
     enum class Rank {
