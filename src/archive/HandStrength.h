@@ -1,4 +1,6 @@
-#include <HandEvaluator.h>
+#pragma once
+
+#include "HandEvaluator.h"
 
 class HandStrength {
 public:

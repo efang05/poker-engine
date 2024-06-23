@@ -1,13 +1,18 @@
-#include <set>
-#include <card.h>
+#ifndef DECK_H
+#define DECK_H
+
+#include <vector>
+#include "Card.h"
+
 class Deck {
 public:
     Deck();
 
-    Card getCard();
-
     void shuffle();
-    
+    Card deal();
+
 private:
-    std::set<Card> m_deck;
+    std::vector<Card> cards;
 };
+
+#endif // DECK_H

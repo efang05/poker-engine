@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine\" -g -std=gnu++17 -o CMakeFiles/GenerateTable.dir/src/stdafx.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/stdafx.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/stdafx.cpp"
+},
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine\" -g -std=gnu++17 -o CMakeFiles/GenerateTable.dir/src/generate_table.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/generate_table.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/generate_table.cpp"
+},
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine\" -g -std=gnu++17 -o CMakeFiles/GenerateTable.dir/src/pokerlib.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/pokerlib.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/pokerlib.cpp"
+},
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine\" -g -std=gnu++17 -o CMakeFiles/GenerateTable.dir/src/mtrand.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/mtrand.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/mtrand.cpp"
+},
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine\" -g -std=gnu++17 -o CMakeFiles/PokerBot.dir/src/test.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/test.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/test.cpp"
+},
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine\" -g -std=gnu++17 -o CMakeFiles/PokerBot.dir/src/mtrand.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/mtrand.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/mtrand.cpp"
+},
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine\" -g -std=gnu++17 -o CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/pokerlib.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/pokerlib.cpp"
+}
+]

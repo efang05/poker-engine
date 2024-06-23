@@ -1,35 +1,22 @@
+#ifndef CARD_H
+#define CARD_H
+
+#include <string>
+
 class Card {
 public:
-    enum class Suit {
-        Heart=1,
-        Diamond=2,
-        Club=3,
-        Spade=4
-    };
+    enum Suit { CLUBS, DIAMONDS, HEARTS, SPADES };
+    enum Rank { TWO = 2, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE };
 
-    enum class Rank {
-        Two=2,
-        Three=3,
-        Four=4,
-        Five=5,
-        Six=6,
-        Seven=7,
-        Eight=8,
-        Nine=9,
-        Ten=10,
-        Jack=11,
-        Queen=12,
-        King=13,
-        Ace=14
-    };
+    Card(Rank r, Suit s);
 
-    Card(Suit suit, Rank rank);
-
+    std::string toString() const;
+    Rank getRank() const;
     Suit getSuit() const;
 
-    Rank getRank() const;
-
 private:
-    Suit m_suit;
-    Rank m_rank;    
+    Rank rank;
+    Suit suit;
 };
+
+#endif // CARD_H
