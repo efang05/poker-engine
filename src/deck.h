@@ -1,18 +1,18 @@
 #ifndef DECK_H
 #define DECK_H
 
-#include <vector>
 #include "Card.h"
+#include <vector>
 
 class Deck {
-public:
-    Deck();
-
-    void shuffle();
-    Card deal();
-
 private:
     std::vector<Card> cards;
+
+public:
+    Deck();
+    void shuffle();
+    Card dealCard();
+    void reset();
 };
 
 #endif // DECK_H

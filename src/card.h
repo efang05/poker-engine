@@ -5,18 +5,14 @@
 
 class Card {
 public:
-    enum Suit { CLUBS, DIAMONDS, HEARTS, SPADES };
-    enum Rank { TWO = 2, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE };
+    std::string rank;
+    std::string suit;
 
-    Card(Rank r, Suit s);
+    Card(std::string r, std::string s) : rank(r), suit(s) {}
 
-    std::string toString() const;
-    Rank getRank() const;
-    Suit getSuit() const;
-
-private:
-    Rank rank;
-    Suit suit;
+    std::string toString() const {
+        return rank + suit;
+    }
 };
 
 #endif // CARD_H

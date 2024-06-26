@@ -1,10 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/PokerBot.dir/src/mtrand.cpp.o"
-  "CMakeFiles/PokerBot.dir/src/mtrand.cpp.o.d"
-  "CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o"
-  "CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o.d"
-  "CMakeFiles/PokerBot.dir/src/test.cpp.o"
-  "CMakeFiles/PokerBot.dir/src/test.cpp.o.d"
+  "CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o"
+  "CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o.d"
   "PokerBot"
   "PokerBot.pdb"
 )

@@ -69,63 +69,31 @@ include CMakeFiles/PokerBot.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/PokerBot.dir/flags.make
 
-CMakeFiles/PokerBot.dir/src/test.cpp.o: CMakeFiles/PokerBot.dir/flags.make
-CMakeFiles/PokerBot.dir/src/test.cpp.o: ../src/test.cpp
-CMakeFiles/PokerBot.dir/src/test.cpp.o: CMakeFiles/PokerBot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PokerBot.dir/src/test.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PokerBot.dir/src/test.cpp.o -MF CMakeFiles/PokerBot.dir/src/test.cpp.o.d -o CMakeFiles/PokerBot.dir/src/test.cpp.o -c "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/test.cpp"
+CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o: CMakeFiles/PokerBot.dir/flags.make
+CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o: ../src/evaluator_test.cpp
+CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o: CMakeFiles/PokerBot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o -MF CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o.d -o CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o -c "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/evaluator_test.cpp"
 
-CMakeFiles/PokerBot.dir/src/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PokerBot.dir/src/test.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/test.cpp" > CMakeFiles/PokerBot.dir/src/test.cpp.i
+CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/evaluator_test.cpp" > CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.i
 
-CMakeFiles/PokerBot.dir/src/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PokerBot.dir/src/test.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/test.cpp" -o CMakeFiles/PokerBot.dir/src/test.cpp.s
-
-CMakeFiles/PokerBot.dir/src/mtrand.cpp.o: CMakeFiles/PokerBot.dir/flags.make
-CMakeFiles/PokerBot.dir/src/mtrand.cpp.o: ../src/mtrand.cpp
-CMakeFiles/PokerBot.dir/src/mtrand.cpp.o: CMakeFiles/PokerBot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PokerBot.dir/src/mtrand.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PokerBot.dir/src/mtrand.cpp.o -MF CMakeFiles/PokerBot.dir/src/mtrand.cpp.o.d -o CMakeFiles/PokerBot.dir/src/mtrand.cpp.o -c "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/mtrand.cpp"
-
-CMakeFiles/PokerBot.dir/src/mtrand.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PokerBot.dir/src/mtrand.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/mtrand.cpp" > CMakeFiles/PokerBot.dir/src/mtrand.cpp.i
-
-CMakeFiles/PokerBot.dir/src/mtrand.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PokerBot.dir/src/mtrand.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/mtrand.cpp" -o CMakeFiles/PokerBot.dir/src/mtrand.cpp.s
-
-CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o: CMakeFiles/PokerBot.dir/flags.make
-CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o: ../src/pokerlib.cpp
-CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o: CMakeFiles/PokerBot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o -MF CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o.d -o CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o -c "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/pokerlib.cpp"
-
-CMakeFiles/PokerBot.dir/src/pokerlib.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PokerBot.dir/src/pokerlib.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/pokerlib.cpp" > CMakeFiles/PokerBot.dir/src/pokerlib.cpp.i
-
-CMakeFiles/PokerBot.dir/src/pokerlib.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PokerBot.dir/src/pokerlib.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/pokerlib.cpp" -o CMakeFiles/PokerBot.dir/src/pokerlib.cpp.s
+CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/evaluator_test.cpp" -o CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.s
 
 # Object files for target PokerBot
 PokerBot_OBJECTS = \
-"CMakeFiles/PokerBot.dir/src/test.cpp.o" \
-"CMakeFiles/PokerBot.dir/src/mtrand.cpp.o" \
-"CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o"
+"CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o"
 
 # External object files for target PokerBot
 PokerBot_EXTERNAL_OBJECTS =
 
-PokerBot: CMakeFiles/PokerBot.dir/src/test.cpp.o
-PokerBot: CMakeFiles/PokerBot.dir/src/mtrand.cpp.o
-PokerBot: CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o
+PokerBot: CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o
 PokerBot: CMakeFiles/PokerBot.dir/build.make
 PokerBot: CMakeFiles/PokerBot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable PokerBot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable PokerBot"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PokerBot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

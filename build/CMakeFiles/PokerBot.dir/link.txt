@@ -1,1 +1,1 @@
-/usr/bin/clang++ -g CMakeFiles/PokerBot.dir/src/test.cpp.o CMakeFiles/PokerBot.dir/src/mtrand.cpp.o CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o -o PokerBot 
+/usr/bin/clang++ -g CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o -o PokerBot 

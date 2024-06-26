@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GenerateTable
-
-# Build rule for target.
-GenerateTable: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GenerateTable
-.PHONY : GenerateTable
-
-# fast build rule for target.
-GenerateTable/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/build
-.PHONY : GenerateTable/fast
-
-#=============================================================================
 # Target rules for targets named PokerBot
 
 # Build rule for target.
@@ -142,131 +129,29 @@ PokerBot/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/build
 .PHONY : PokerBot/fast
 
-src/generate_table.o: src/generate_table.cpp.o
-.PHONY : src/generate_table.o
+src/evaluator_test.o: src/evaluator_test.cpp.o
+.PHONY : src/evaluator_test.o
 
 # target to build an object file
-src/generate_table.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/generate_table.cpp.o
-.PHONY : src/generate_table.cpp.o
+src/evaluator_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o
+.PHONY : src/evaluator_test.cpp.o
 
-src/generate_table.i: src/generate_table.cpp.i
-.PHONY : src/generate_table.i
-
-# target to preprocess a source file
-src/generate_table.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/generate_table.cpp.i
-.PHONY : src/generate_table.cpp.i
-
-src/generate_table.s: src/generate_table.cpp.s
-.PHONY : src/generate_table.s
-
-# target to generate assembly for a file
-src/generate_table.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/generate_table.cpp.s
-.PHONY : src/generate_table.cpp.s
-
-src/mtrand.o: src/mtrand.cpp.o
-.PHONY : src/mtrand.o
-
-# target to build an object file
-src/mtrand.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/mtrand.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/mtrand.cpp.o
-.PHONY : src/mtrand.cpp.o
-
-src/mtrand.i: src/mtrand.cpp.i
-.PHONY : src/mtrand.i
+src/evaluator_test.i: src/evaluator_test.cpp.i
+.PHONY : src/evaluator_test.i
 
 # target to preprocess a source file
-src/mtrand.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/mtrand.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/mtrand.cpp.i
-.PHONY : src/mtrand.cpp.i
+src/evaluator_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.i
+.PHONY : src/evaluator_test.cpp.i
 
-src/mtrand.s: src/mtrand.cpp.s
-.PHONY : src/mtrand.s
-
-# target to generate assembly for a file
-src/mtrand.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/mtrand.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/mtrand.cpp.s
-.PHONY : src/mtrand.cpp.s
-
-src/pokerlib.o: src/pokerlib.cpp.o
-.PHONY : src/pokerlib.o
-
-# target to build an object file
-src/pokerlib.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/pokerlib.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/pokerlib.cpp.o
-.PHONY : src/pokerlib.cpp.o
-
-src/pokerlib.i: src/pokerlib.cpp.i
-.PHONY : src/pokerlib.i
-
-# target to preprocess a source file
-src/pokerlib.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/pokerlib.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/pokerlib.cpp.i
-.PHONY : src/pokerlib.cpp.i
-
-src/pokerlib.s: src/pokerlib.cpp.s
-.PHONY : src/pokerlib.s
+src/evaluator_test.s: src/evaluator_test.cpp.s
+.PHONY : src/evaluator_test.s
 
 # target to generate assembly for a file
-src/pokerlib.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/pokerlib.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/pokerlib.cpp.s
-.PHONY : src/pokerlib.cpp.s
-
-src/stdafx.o: src/stdafx.cpp.o
-.PHONY : src/stdafx.o
-
-# target to build an object file
-src/stdafx.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/stdafx.cpp.o
-.PHONY : src/stdafx.cpp.o
-
-src/stdafx.i: src/stdafx.cpp.i
-.PHONY : src/stdafx.i
-
-# target to preprocess a source file
-src/stdafx.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/stdafx.cpp.i
-.PHONY : src/stdafx.cpp.i
-
-src/stdafx.s: src/stdafx.cpp.s
-.PHONY : src/stdafx.s
-
-# target to generate assembly for a file
-src/stdafx.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenerateTable.dir/build.make CMakeFiles/GenerateTable.dir/src/stdafx.cpp.s
-.PHONY : src/stdafx.cpp.s
-
-src/test.o: src/test.cpp.o
-.PHONY : src/test.o
-
-# target to build an object file
-src/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/test.cpp.o
-.PHONY : src/test.cpp.o
-
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
-
-# target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
-
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
-
-# target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+src/evaluator_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.s
+.PHONY : src/evaluator_test.cpp.s
 
 # Help Target
 help:
@@ -276,23 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... GenerateTable"
 	@echo "... PokerBot"
-	@echo "... src/generate_table.o"
-	@echo "... src/generate_table.i"
-	@echo "... src/generate_table.s"
-	@echo "... src/mtrand.o"
-	@echo "... src/mtrand.i"
-	@echo "... src/mtrand.s"
-	@echo "... src/pokerlib.o"
-	@echo "... src/pokerlib.i"
-	@echo "... src/pokerlib.s"
-	@echo "... src/stdafx.o"
-	@echo "... src/stdafx.i"
-	@echo "... src/stdafx.s"
-	@echo "... src/test.o"
-	@echo "... src/test.i"
-	@echo "... src/test.s"
+	@echo "... src/evaluator_test.o"
+	@echo "... src/evaluator_test.i"
+	@echo "... src/evaluator_test.s"
 .PHONY : help
 
 
