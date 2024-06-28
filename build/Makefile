@@ -117,24 +117,133 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named PokerBot
+# Target rules for targets named TestEvaluator
 
 # Build rule for target.
-PokerBot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PokerBot
-.PHONY : PokerBot
+TestEvaluator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TestEvaluator
+.PHONY : TestEvaluator
 
 # fast build rule for target.
-PokerBot/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/build
-.PHONY : PokerBot/fast
+TestEvaluator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestEvaluator.dir/build.make CMakeFiles/TestEvaluator.dir/build
+.PHONY : TestEvaluator/fast
+
+#=============================================================================
+# Target rules for targets named PokerEngine
+
+# Build rule for target.
+PokerEngine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PokerEngine
+.PHONY : PokerEngine
+
+# fast build rule for target.
+PokerEngine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/build
+.PHONY : PokerEngine/fast
+
+src/Evaluator.o: src/Evaluator.cpp.o
+.PHONY : src/Evaluator.o
+
+# target to build an object file
+src/Evaluator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/Evaluator.cpp.o
+.PHONY : src/Evaluator.cpp.o
+
+src/Evaluator.i: src/Evaluator.cpp.i
+.PHONY : src/Evaluator.i
+
+# target to preprocess a source file
+src/Evaluator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/Evaluator.cpp.i
+.PHONY : src/Evaluator.cpp.i
+
+src/Evaluator.s: src/Evaluator.cpp.s
+.PHONY : src/Evaluator.s
+
+# target to generate assembly for a file
+src/Evaluator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/Evaluator.cpp.s
+.PHONY : src/Evaluator.cpp.s
+
+src/Game.o: src/Game.cpp.o
+.PHONY : src/Game.o
+
+# target to build an object file
+src/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/Game.cpp.o
+.PHONY : src/Game.cpp.o
+
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
+
+src/MCCFR.o: src/MCCFR.cpp.o
+.PHONY : src/MCCFR.o
+
+# target to build an object file
+src/MCCFR.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/MCCFR.cpp.o
+.PHONY : src/MCCFR.cpp.o
+
+src/MCCFR.i: src/MCCFR.cpp.i
+.PHONY : src/MCCFR.i
+
+# target to preprocess a source file
+src/MCCFR.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/MCCFR.cpp.i
+.PHONY : src/MCCFR.cpp.i
+
+src/MCCFR.s: src/MCCFR.cpp.s
+.PHONY : src/MCCFR.s
+
+# target to generate assembly for a file
+src/MCCFR.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/MCCFR.cpp.s
+.PHONY : src/MCCFR.cpp.s
+
+src/Strategy.o: src/Strategy.cpp.o
+.PHONY : src/Strategy.o
+
+# target to build an object file
+src/Strategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/Strategy.cpp.o
+.PHONY : src/Strategy.cpp.o
+
+src/Strategy.i: src/Strategy.cpp.i
+.PHONY : src/Strategy.i
+
+# target to preprocess a source file
+src/Strategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/Strategy.cpp.i
+.PHONY : src/Strategy.cpp.i
+
+src/Strategy.s: src/Strategy.cpp.s
+.PHONY : src/Strategy.s
+
+# target to generate assembly for a file
+src/Strategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/Strategy.cpp.s
+.PHONY : src/Strategy.cpp.s
 
 src/evaluator_test.o: src/evaluator_test.cpp.o
 .PHONY : src/evaluator_test.o
 
 # target to build an object file
 src/evaluator_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestEvaluator.dir/build.make CMakeFiles/TestEvaluator.dir/src/evaluator_test.cpp.o
 .PHONY : src/evaluator_test.cpp.o
 
 src/evaluator_test.i: src/evaluator_test.cpp.i
@@ -142,7 +251,7 @@ src/evaluator_test.i: src/evaluator_test.cpp.i
 
 # target to preprocess a source file
 src/evaluator_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestEvaluator.dir/build.make CMakeFiles/TestEvaluator.dir/src/evaluator_test.cpp.i
 .PHONY : src/evaluator_test.cpp.i
 
 src/evaluator_test.s: src/evaluator_test.cpp.s
@@ -150,8 +259,32 @@ src/evaluator_test.s: src/evaluator_test.cpp.s
 
 # target to generate assembly for a file
 src/evaluator_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestEvaluator.dir/build.make CMakeFiles/TestEvaluator.dir/src/evaluator_test.cpp.s
 .PHONY : src/evaluator_test.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -161,10 +294,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... PokerBot"
+	@echo "... PokerEngine"
+	@echo "... TestEvaluator"
+	@echo "... src/Evaluator.o"
+	@echo "... src/Evaluator.i"
+	@echo "... src/Evaluator.s"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
+	@echo "... src/MCCFR.o"
+	@echo "... src/MCCFR.i"
+	@echo "... src/MCCFR.s"
+	@echo "... src/Strategy.o"
+	@echo "... src/Strategy.i"
+	@echo "... src/Strategy.s"
 	@echo "... src/evaluator_test.o"
 	@echo "... src/evaluator_test.i"
 	@echo "... src/evaluator_test.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

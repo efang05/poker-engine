@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine"
+CXX_INCLUDES = -I"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src" -I"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine"
 
 CXX_FLAGS = -g -std=gnu++17
 

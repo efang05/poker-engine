@@ -1,21 +1,27 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "Card.h"
 #include <vector>
 #include <string>
+#include "Card.h"
 
 class Player {
 public:
     std::string name;
     std::vector<Card> hand;
-    int chips;
     bool inGame;
+    double capital;
 
-    Player(std::string n, int c) : name(n), chips(c), inGame(true) {}
+    Player() : name(""), inGame(true), capital(1000.0) {}
+    Player(const std::string& name, double initialCapital) : name(name), inGame(true), capital(initialCapital) {}
 
-    void addCardToHand(const Card& card);
-    void resetHand();
+    std::string toString() const {
+        std::string result = name + ": ";
+        for (const auto& card : hand) {
+            result += card.toString() + " ";
+        }
+        return result;
+    }
 };
 
 #endif // PLAYER_H

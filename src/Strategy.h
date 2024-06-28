@@ -16,4 +16,4 @@ public:
     Action decideAction(const Player& player, const Game& game);
 };
 
-#endif // STRATEGY_H
+#endif

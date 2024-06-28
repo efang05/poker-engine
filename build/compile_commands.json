@@ -1,7 +1,32 @@
 [
 {
   "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
-  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine\" -g -std=gnu++17 -o CMakeFiles/PokerBot.dir/src/evaluator_test.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/evaluator_test.cpp\"",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src\" -g -std=gnu++17 -o CMakeFiles/TestEvaluator.dir/src/evaluator_test.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/evaluator_test.cpp\"",
   "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/evaluator_test.cpp"
+},
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src\" -g -std=gnu++17 -o CMakeFiles/PokerEngine.dir/src/main.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/main.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/main.cpp"
+},
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src\" -g -std=gnu++17 -o CMakeFiles/PokerEngine.dir/src/Game.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/Game.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/Game.cpp"
+},
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src\" -g -std=gnu++17 -o CMakeFiles/PokerEngine.dir/src/Evaluator.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/Evaluator.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/Evaluator.cpp"
+},
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src\" -g -std=gnu++17 -o CMakeFiles/PokerEngine.dir/src/MCCFR.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/MCCFR.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/MCCFR.cpp"
+},
+{
+  "directory": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build",
+  "command": "/usr/bin/clang++  -I\"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src\" -g -std=gnu++17 -o CMakeFiles/PokerEngine.dir/src/Strategy.cpp.o -c \"/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/Strategy.cpp\"",
+  "file": "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/Strategy.cpp"
 }
 ]

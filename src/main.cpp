@@ -1,6 +1,7 @@
-#include "PokerEvaluator.h"
+#include "Evaluator.h"
 #include "Game.h"
-#include "Strategy.h"
+#include "MCCFR.h"
+#include <iostream>
 
 int main() {
     const char * path = "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/src/HandRanks.dat";
@@ -10,12 +11,18 @@ int main() {
         return 1;
     }
 
-    std::vector<std::string> playerNames = {"Alice", "Bob", "Charlie"};
-    Game game(playerNames, 1000);
-    Strategy strategy;
+    Player player1("Alice", 1000.0);
+    Player player2("Bob", 1000.0);
 
-    game.startNewRound();
-    game.dealHands(2);  // Deal 2 cards to each player (Texas Hold'em)
+    Game game(player1, player2);
+    MCCFR mccfr;
+
+    game.dealHands();  // Deal initial hands to players
+    game.dealFlop();   // Deal the flop
+    game.dealTurn();   // Deal the turn
+    game.dealRiver();  // Deal the river
+
+    mccfr.train(game, 10);  // Train with 10 iterations using 4 threads for testing
 
     for (const auto& player : game.getPlayers()) {
         std::cout << player.name << "'s hand: ";
@@ -25,22 +32,28 @@ int main() {
         std::cout << "\n";
     }
 
-    // Placeholder for the game loop
+    std::cout << "Community cards: ";
+    for (const auto& card : game.communityCards) {
+        std::cout << card.toString() << " ";
+    }
+    std::cout << "\n";
+
     for (auto& player : game.getPlayers()) {
         if (player.inGame) {
-            Action action = strategy.decideAction(player, game);
+            Action action = mccfr.getAction(game, player);
             switch (action) {
                 case FOLD:
+                    std::cout << player.name << " folds.\n";
                     player.inGame = false;
                     break;
                 case CALL:
-                    // Add logic for calling
+                    std::cout << player.name << " calls.\n";
                     break;
                 case RAISE:
-                    // Add logic for raising
+                    std::cout << player.name << " raises.\n";
                     break;
                 case CHECK:
-                    // Add logic for checking
+                    std::cout << player.name << " checks.\n";
                     break;
             }
         }

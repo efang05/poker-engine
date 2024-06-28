@@ -1,9 +1,12 @@
+#ifndef EVALUATOR_H
+#define EVALUATOR_H
+
 #include <iostream>
 #include <unordered_map>
 #include <vector>
 #include <string>
 
-extern int HR[32487834];
+extern int HR[32487834]; // Use extern to declare the variable
 
 extern const std::unordered_map<std::string, int> CARDS;
 extern const std::vector<std::string> HANDTYPES;
@@ -20,3 +23,5 @@ struct HandResult {
 };
 
 HandResult evalHand(const std::vector<std::string>& cardStrings);
+
+#endif // EVALUATOR_H

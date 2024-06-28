@@ -1,3 +1,4 @@
-/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles/PokerBot.dir
+/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles/TestEvaluator.dir
+/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles/PokerEngine.dir
 /mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles/rebuild_cache.dir

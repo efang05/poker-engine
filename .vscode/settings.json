@@ -52,6 +52,14 @@
         "chrono": "cpp",
         "ctime": "cpp",
         "ratio": "cpp",
-        "fstream": "cpp"
-    }
+        "fstream": "cpp",
+        "semaphore": "cpp",
+        "stop_token": "cpp",
+        "thread": "cpp",
+        "bitset": "cpp",
+        "cinttypes": "cpp",
+        "condition_variable": "cpp",
+        "mutex": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }

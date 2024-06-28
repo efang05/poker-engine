@@ -4,18 +4,19 @@ project(PokerBot)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# add_executable(PokerBot
-#     src/generate_table.cpp
-#     src/pokerlib.cpp
-#     src/mtrand.cpp
-# )
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
-# # GenerateTable executable
-# add_executable(GenerateTable src/stdafx.cpp src/generate_table.cpp src/pokerlib.cpp src/mtrand.cpp)
+add_executable(TestEvaluator
+    src/evaluator_test.cpp
+)
 
-# Test executable
-add_executable(PokerBot src/evaluator_test.cpp)
+add_executable(PokerEngine
+    src/main.cpp
+    src/Game.cpp
+    src/Evaluator.cpp
+    src/MCCFR.cpp
+    src/Strategy.cpp
+)
 
-# Include directories for headers
-# target_include_directories(GenerateTable PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
-target_include_directories(PokerBot PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_include_directories(PokerEngine PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)

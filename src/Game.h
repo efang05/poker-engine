@@ -1,24 +1,47 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "Deck.h"
-#include "Player.h"
 #include <vector>
-#include <string>
+#include "Player.h"
+#include "Deck.h"
 
 class Game {
-private:
-    Deck deck;
-    std::vector<Player> players;
-    int pot;
-
 public:
-    Game(const std::vector<std::string>& playerNames, int startingChips);
-    void startNewRound();
-    void dealHands(int cardsPerPlayer);
-    void addToPot(int amount);
-    int getPot() const;
-    const std::vector<Player>& getPlayers() const;
+    Player player1;
+    Player player2;
+    Deck deck;
+    std::vector<Card> communityCards;
+    double potSize;
+
+    Game(const Player& p1, const Player& p2) : player1(p1), player2(p2), potSize(0.0) {}
+
+    Player& getOpponent(const Player& player) const;
+    std::vector<Player> getPlayers() const;
+
+    void dealHands() {
+        player1.hand = {deck.dealCard(), deck.dealCard()};
+        player2.hand = {deck.dealCard(), deck.dealCard()};
+    }
+
+    void dealFlop() {
+        communityCards = {deck.dealCard(), deck.dealCard(), deck.dealCard()};
+    }
+
+    void dealTurn() {
+        communityCards.push_back(deck.dealCard());
+    }
+
+    void dealRiver() {
+        communityCards.push_back(deck.dealCard());
+    }
+
+    void resetPot() {
+        potSize = 0.0;
+    }
+
+    void addToPot(double amount) {
+        potSize += amount;
+    }
 };
 
 #endif // GAME_H

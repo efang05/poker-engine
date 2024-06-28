@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/PokerBot.dir/all
+all: CMakeFiles/TestEvaluator.dir/all
+all: CMakeFiles/PokerEngine.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/PokerBot.dir/clean
+clean: CMakeFiles/TestEvaluator.dir/clean
+clean: CMakeFiles/PokerEngine.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/PokerBot.dir
+# Target rules for target CMakeFiles/TestEvaluator.dir
 
 # All Build rule for target.
-CMakeFiles/PokerBot.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" --progress-num=1,2 "Built target PokerBot"
-.PHONY : CMakeFiles/PokerBot.dir/all
+CMakeFiles/TestEvaluator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestEvaluator.dir/build.make CMakeFiles/TestEvaluator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestEvaluator.dir/build.make CMakeFiles/TestEvaluator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" --progress-num=7,8 "Built target TestEvaluator"
+.PHONY : CMakeFiles/TestEvaluator.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/PokerBot.dir/rule: cmake_check_build_system
+CMakeFiles/TestEvaluator.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PokerBot.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TestEvaluator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" 0
-.PHONY : CMakeFiles/PokerBot.dir/rule
+.PHONY : CMakeFiles/TestEvaluator.dir/rule
 
 # Convenience name for target.
-PokerBot: CMakeFiles/PokerBot.dir/rule
-.PHONY : PokerBot
+TestEvaluator: CMakeFiles/TestEvaluator.dir/rule
+.PHONY : TestEvaluator
 
 # clean rule for target.
-CMakeFiles/PokerBot.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerBot.dir/build.make CMakeFiles/PokerBot.dir/clean
-.PHONY : CMakeFiles/PokerBot.dir/clean
+CMakeFiles/TestEvaluator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestEvaluator.dir/build.make CMakeFiles/TestEvaluator.dir/clean
+.PHONY : CMakeFiles/TestEvaluator.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/PokerEngine.dir
+
+# All Build rule for target.
+CMakeFiles/PokerEngine.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target PokerEngine"
+.PHONY : CMakeFiles/PokerEngine.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/PokerEngine.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PokerEngine.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/eddie/Documents/Poker Engine/poker-engine/build/CMakeFiles" 0
+.PHONY : CMakeFiles/PokerEngine.dir/rule
+
+# Convenience name for target.
+PokerEngine: CMakeFiles/PokerEngine.dir/rule
+.PHONY : PokerEngine
+
+# clean rule for target.
+CMakeFiles/PokerEngine.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokerEngine.dir/build.make CMakeFiles/PokerEngine.dir/clean
+.PHONY : CMakeFiles/PokerEngine.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

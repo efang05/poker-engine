@@ -1,10 +1,11 @@
-#include "PokerEvalulator.h"
+#include "Evaluator.h"
 #include <cstring>
 #include <fstream>
+#include <chrono>
 
-int HR[32487834];
+int HR[32487834]; // Define the variable
 
-// Card and hand mappings
+// Define the card and hand mappings
 const std::unordered_map<std::string, int> CARDS = {
     {"2c", 1}, {"2d", 2}, {"2h", 3}, {"2s", 4},
     {"3c", 5}, {"3d", 6}, {"3h", 7}, {"3s", 8},
@@ -61,7 +62,13 @@ HandResult evalHand(const std::vector<std::string>& cardStrings) {
     for (const auto& card : cardStrings) {
         cards.push_back(CARDS.at(card));
     }
+
+    auto start = std::chrono::high_resolution_clock::now();
     int p = eval(cards);
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+    std::cout << "Hand evaluation took " << duration << " microseconds.\n";
+
     return {
         p >> 12,
         p & 0x00000fff,

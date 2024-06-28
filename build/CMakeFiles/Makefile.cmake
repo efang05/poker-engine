@@ -46,5 +46,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/PokerBot.dir/DependInfo.cmake"
+  "CMakeFiles/TestEvaluator.dir/DependInfo.cmake"
+  "CMakeFiles/PokerEngine.dir/DependInfo.cmake"
   )
