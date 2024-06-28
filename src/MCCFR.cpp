@@ -76,7 +76,7 @@ double MCCFR::calculateUtility(const Game& game, const Player& player) {
 }
 
 double MCCFR::cfr(Game& game, Player& player, double pi1, double pi2, int depth) {
-    if (depth > 10 || !player.inGame) return 0;
+    if (depth > 10 || !player.inGame) return calculateUtility(game, player);
 
     std::string stateKey = getStateKey(game, player);
     MCCFRNode& node = nodes[stateKey];
@@ -151,7 +151,7 @@ double MCCFR::cfr(Game& game, Player& player, double pi1, double pi2, int depth)
             }
         } else if (a == "CHECK") {
             // Implement the logic for CHECK action here
-            actionUtilities[a] = 0; // Placeholder for CHECK utility
+            actionUtilities[a] = cfr(actionGame, actionPlayer, pi1 * piAction, pi2, depth + 1);
         }
     }
 
@@ -185,29 +185,49 @@ void MCCFR::train(Game& game, int iterations) {
         Game trainingGame = game;  // Make a copy of the game state for each iteration
         trainingGame.resetPot();
         trainingGame.dealHands();
+        std::cout << "Iteration: " << i << "\n";
+        std::cout << "Alice's hand: " << trainingGame.getPlayers()[0].hand[0].toString() << " " << trainingGame.getPlayers()[0].hand[1].toString() << "\n";
+        std::cout << "Bob's hand: " << trainingGame.getPlayers()[1].hand[0].toString() << " " << trainingGame.getPlayers()[1].hand[1].toString() << "\n";
+
         trainingGame.dealFlop();
+        std::cout << "Community cards: " << trainingGame.communityCards[0].toString() << " " << trainingGame.communityCards[1].toString() << " " << trainingGame.communityCards[2].toString() << "\n";
+
         for (auto& player : trainingGame.getPlayers()) {
             if (player.inGame) {
-                logFile << "Iteration: " << i << ", Player: " << player.name << std::endl;
                 double utility = cfr(trainingGame, player, 1.0, 1.0, 0);
-                logFile << "Iteration: " << i << ", Player: " << player.name << ", Utility: " << utility << std::endl;
+                std::cout << player.name << " checks.\n";
             }
         }
+
         trainingGame.dealTurn();
+        std::cout << "Community cards: " << trainingGame.communityCards[0].toString() << " " << trainingGame.communityCards[1].toString() << " " << trainingGame.communityCards[2].toString() << " " << trainingGame.communityCards[3].toString() << "\n";
+
         for (auto& player : trainingGame.getPlayers()) {
             if (player.inGame) {
-                logFile << "Iteration: " << i << ", Player: " << player.name << std::endl;
                 double utility = cfr(trainingGame, player, 1.0, 1.0, 0);
-                logFile << "Iteration: " << i << ", Player: " << player.name << ", Utility: " << utility << std::endl;
+                std::cout << player.name << " calls.\n";
             }
         }
+
         trainingGame.dealRiver();
+        std::cout << "Community cards: " << trainingGame.communityCards[0].toString() << " " << trainingGame.communityCards[1].toString() << " " << trainingGame.communityCards[2].toString() << " " << trainingGame.communityCards[3].toString() << " " << trainingGame.communityCards[4].toString() << "\n";
+
         for (auto& player : trainingGame.getPlayers()) {
             if (player.inGame) {
-                logFile << "Iteration: " << i << ", Player: " << player.name << std::endl;
                 double utility = cfr(trainingGame, player, 1.0, 1.0, 0);
-                logFile << "Iteration: " << i << ", Player: " << player.name << ", Utility: " << utility << std::endl;
+                std::cout << player.name << " folds.\n";
             }
+        }
+
+        // Determine and display the winner
+        double aliceUtility = calculateUtility(trainingGame, trainingGame.getPlayers()[0]);
+        double bobUtility = calculateUtility(trainingGame, trainingGame.getPlayers()[1]);
+        if (aliceUtility > bobUtility) {
+            std::cout << "Alice wins.\n";
+        } else if (bobUtility > aliceUtility) {
+            std::cout << "Bob wins.\n";
+        } else {
+            std::cout << "It's a tie.\n";
         }
     }
 }

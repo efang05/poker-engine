@@ -67,7 +67,7 @@ HandResult evalHand(const std::vector<std::string>& cardStrings) {
     int p = eval(cards);
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-    std::cout << "Hand evaluation took " << duration << " microseconds.\n";
+    // std::cout << "Hand evaluation took " << duration << " microseconds.\n";
 
     return {
         p >> 12,
