@@ -1,3 +1,5 @@
 build/
 src/HandRanks.dat
 src/archive
+src/Analysis
+.vscode/

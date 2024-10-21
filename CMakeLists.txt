@@ -10,12 +10,28 @@ add_executable(TestEvaluator
     src/evaluator_test.cpp
 )
 
+add_executable(TestRound
+    src/TestRound.cpp
+    src/Game/Game.cpp
+    src/Util/Evaluator.cpp
+)
+
+add_executable(TestBetting
+    src/TestBetting.cpp
+    src/Game/Game.cpp
+    src/Util/Evaluator.cpp
+)
+
+add_executable(GenerateRanks
+    src/Util/Evaluator.cpp
+    src/EvaluateHandsTest.cpp
+)
+
 add_executable(PokerEngine
     src/main.cpp
-    src/Game.cpp
-    src/Evaluator.cpp
-    src/MCCFR.cpp
-    src/Strategy.cpp
+    src/Game/Game.cpp
+    src/Util/Evaluator.cpp
+    # src/MCCFR.cpp
 )
 
 

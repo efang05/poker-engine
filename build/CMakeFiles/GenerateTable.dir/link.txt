@@ -1,1 +1,0 @@
-/usr/bin/clang++ -g CMakeFiles/GenerateTable.dir/src/stdafx.cpp.o CMakeFiles/GenerateTable.dir/src/generate_table.cpp.o CMakeFiles/GenerateTable.dir/src/pokerlib.cpp.o CMakeFiles/GenerateTable.dir/src/mtrand.cpp.o -o GenerateTable 
